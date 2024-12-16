@@ -12,6 +12,7 @@ header{
 header ul{
     width: auto;
     height: auto;
+    padding: 0px;
 
     list-style: none;
 
@@ -25,7 +26,7 @@ header li{
     width: auto;
     height: auto;
 
-    padding: 1%;
+    padding: 20px 50px;
 
     font-weight: bold;
 }
@@ -34,8 +35,13 @@ header img{
     width: auto;
     height: 50px;
 }
-header li:first-child{
+header ul li:first-child{
     padding: 0px;
+}
+
+header li:nth-child(2){
+    /* Espacio entre logo y opciones del menu */
+    flex-grow: 1;
 }
 
 
@@ -45,6 +51,26 @@ header li:hover:not(li:first-child){
     cursor: pointer;
 }
 
-.tipo2{
-    margin-top: 200px;
+/* --------------------------------- Submenu -------------------------------- */
+.categorias{
+    background-color: #d85300;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.categorias li{
+    background-color: antiquewhite;
+
+    width: auto;
+    height: auto;
+
+    padding: 20px 50px;
+
+    font-weight: bold;
+    
+}
+.categorias li:first-child{
+    padding: 20px 50px;
 }
