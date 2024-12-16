@@ -1,16 +1,49 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
 
 header{
     width: 100%;
-    height: auto;
-
-    display: flex;
-    flex-direction: row;
-}
-header img{
-    width: auto;
-    height: auto;
+    height: 10%;
 }
 
 header ul{
+    width: auto;
+    height: auto;
+
     list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header li{
+    width: auto;
+    height: auto;
+
+    padding: 1%;
+
+    font-weight: bold;
+}
+
+header img{
+    width: auto;
+    height: 50px;
+}
+header li:first-child{
+    padding: 0px;
+}
+
+
+header li:hover:not(li:first-child){
+    /* Al posicionarse sobre el menu se cambiara el color de la letra (primer hijo de li) */
+    color: #d85300;
+    cursor: pointer;
+}
+
+.tipo2{
+    margin-top: 200px;
 }
