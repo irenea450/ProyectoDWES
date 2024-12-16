@@ -1,0 +1,16 @@
+
+header{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+header img{
+    width: auto;
+    height: auto;
+}
+
+header ul{
+    list-style: none;
+}
